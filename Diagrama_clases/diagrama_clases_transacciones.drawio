@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2023-07-10T21:53:29.892Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="bIBIZjulzTNf66kEDFOJ" version="21.5.2" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1154" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="690" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-0" value="&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&amp;nbsp;CreditoConsumoResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="20" width="450" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-1" value="-&amp;nbsp;CreditoConsumosRepository:&amp;nbsp;CreditoConsumosRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="26" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-6" value="-&amp;nbsp;creditoConsumoUseCase:&amp;nbsp;creditoConsumoUseCase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="52" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="78" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-4" value="+&amp;nbsp;findConsumosByIdCliente(CargoConsumo):CargoConsumo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="86" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-3" value="+&amp;nbsp;save(CargoConsumo):CargoConsumo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="112" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-5" value="+&amp;nbsp;findPagosByNumeroCredito(String numeroCredito):CargoConsumo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-0">
+          <mxGeometry y="138" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-7" value="&amp;lt;&amp;lt;Unidad de Negocio&amp;gt;&amp;gt;&amp;nbsp;CreditoConsumoUseCase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="190" width="450" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-8" value="- creditoConsumosRepository :&amp;nbsp;CreditoConsumosRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-7">
+          <mxGeometry y="26" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-7">
+          <mxGeometry y="52" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-10" value="+&amp;nbsp;save(CargoConsumoDao&lt;span style=&quot;background-color: initial;&quot;&gt;):&amp;nbsp;&lt;/span&gt;CargoConsumoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-7">
+          <mxGeometry y="60" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-16" value="&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&amp;nbsp;CreditoProductoPagosResource" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="420" width="470" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-20" value="- creditosPagosUseCase:&amp;nbsp;CreditosPagosUseCase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-17" value="- creditoProductoPagoRepository:&amp;nbsp;CreditoProductoPagoRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="52" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="78" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-19" value="+&amp;nbsp;save(Pago):Pago" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="86" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-30" value="+&amp;nbsp;findPagosByIdCliente(String id):Pago" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="112" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-31" value="+&amp;nbsp;findByNumeroCredito(String):Pago" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-16">
+          <mxGeometry y="138" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-21" value="&amp;lt;&amp;lt;Unidad de Negocio&amp;gt;&amp;gt;&amp;nbsp;CreditosPagosUseCase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="600" width="470" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-22" value="-creditoProductoPagoRepository:&amp;nbsp;CreditoProductoPagoRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-21">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-21">
+          <mxGeometry y="52" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-24" value="+&amp;nbsp;save(PagoDao):PagoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-21">
+          <mxGeometry y="60" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-25" value="&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&amp;nbsp;OperacionesCuentaResource&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="810" width="470" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-26" value="-&amp;nbsp;OperacionesCuentaRepository:&amp;nbsp;OperacionesCuentaRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-25">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-29" value="-&amp;nbsp;OperacionesCuentasUseCase:&amp;nbsp;OperacionesCuentasUseCase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-25">
+          <mxGeometry y="52" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-25">
+          <mxGeometry y="78" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-28" value="+&amp;nbsp;save(OperacionCta):OperacionCta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-25">
+          <mxGeometry y="86" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-32" value="&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&amp;nbsp;CreditoConsumosRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="290" width="450" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-32">
+          <mxGeometry y="26" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-35" value="+&amp;nbsp;findByIdCliente(String):CargoConsumoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-32">
+          <mxGeometry y="34" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-36" value="+&amp;nbsp;findByNumeroCredito(String): CargoConsumoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-32">
+          <mxGeometry y="60" width="450" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-37" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&amp;nbsp;CreditoProductoPagoRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="700" width="470" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-37">
+          <mxGeometry y="26" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-38" value="+&amp;nbsp;findByIdCliente(String):PagoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-37">
+          <mxGeometry y="34" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ukXQ2zRwNNPuwA_Y9Ed-41" value="+&amp;nbsp;findByNumeroCredito(String ):PagoDao" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ukXQ2zRwNNPuwA_Y9Ed-37">
+          <mxGeometry y="60" width="470" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
