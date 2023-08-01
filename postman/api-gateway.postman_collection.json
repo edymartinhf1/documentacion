@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "5f2dcd65-c25d-4b55-994c-0ee1086a7e16",
+		"name": "api-gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/clientes/v1/clientes/64a835a44723df7e0f489e19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"clientes",
+						"v1",
+						"clientes",
+						"64a835a44723df7e0f489e19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/cuentas/v1/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuentas",
+						"v1",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creditos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/creditos/v1/creditos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"creditos",
+						"v1",
+						"creditos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-cuentas-operaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/cuentas-operaciones/v1/operaciones/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"cuentas-operaciones",
+						"v1",
+						"operaciones",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-creditos-consumos.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/creditos-consumos/v1/creditos/tarjetas/cargos/64b973aaa66a4e7ca583e094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"creditos-consumos",
+						"v1",
+						"creditos",
+						"tarjetas",
+						"cargos",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-creditos-pagos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/creditos-pagos/v1/creditos/pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"creditos-pagos",
+						"v1",
+						"creditos",
+						"pago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-saldos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/saldos/v1/saldos/64a8361c4723df7e0f489e1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"saldos",
+						"v1",
+						"saldos",
+						"64a8361c4723df7e0f489e1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/movimientos/v1/movimientos/64b973aaa66a4e7ca583e094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"movimientos",
+						"v1",
+						"movimientos",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

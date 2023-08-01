@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "b453547f-5b71-4f20-be8b-85df6e22338d",
+		"name": "coleccion-api-creditos-pagos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "CREDITOS-PAGOS-TARJETA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\":\"64b973aaa66a4e7ca583e094\",\r\n    \"numeroCredito\": \"TJC71709\",\r\n    \"numeroTarjetaCredito\": \"TAR-71709\",       \r\n    \"importe\":650   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/creditos/pago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"creditos",
+						"pago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PAGOS POR RANGO DE FECHAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/creditos/pago/numerocredito/EMP33559/fechainicio/2023-07-01 00:00:00/fechafin/2023-07-31 00:00:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"creditos",
+						"pago",
+						"numerocredito",
+						"EMP33559",
+						"fechainicio",
+						"2023-07-01 00:00:00",
+						"fechafin",
+						"2023-07-31 00:00:00"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

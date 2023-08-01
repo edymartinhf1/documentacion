@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "db716ba6-c0a7-4e8f-bdf1-ea2db7367156",
+		"name": "coleccion api-monedero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "GENERA INTERCAMBIO COM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoIntercambioP2P\": \"COM\",\r\n    \"numeroCelular\": \"900100302\",\r\n    \"modoPago\": \"MON\",\r\n    \"monto\": \"500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/monedero/p2p",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"monedero",
+						"p2p"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACEPTA INTERCAMBIO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"64c8f3dde15c922736b3f0a5\",\r\n    \"numeroCelularAceptante\":\"900100305\",\r\n    \"idClienteAceptante\": \"64c8f222f6b26b3e36634503\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/monedero/p2p",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"monedero",
+						"p2p"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTAS INTERCAMBIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/monedero/p2p",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"monedero",
+						"p2p"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

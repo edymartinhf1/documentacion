@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "51e507e7-adbf-4f1d-8c54-481fb1c30756",
+		"name": "coleccion-api-creditos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "POST PRODUCTO CREDITO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"idCliente\":\"64a8361c4723df7e0f489e1a\",\r\n    \"tipoCredito\":\"TJC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/creditos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CREDITOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/creditos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INFO DEUDA CREDITO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/creditos/deudas/cliente/64b973aaa66a4e7ca583e094",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos",
+						"deudas",
+						"cliente",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CREDITOS CLIENTE ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/creditos/cliente/64b973aaa66a4e7ca583e094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos",
+						"cliente",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CREDITOS ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/creditos/64bc8ef08cd8bd3fbaa3d91d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos",
+						"64bc8ef08cd8bd3fbaa3d91d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

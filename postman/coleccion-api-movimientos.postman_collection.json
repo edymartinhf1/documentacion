@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "35eb1a9b-6193-4136-aadb-f0e45ba93757",
+		"name": "coleccion-api-movimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "GET MOVIMIENTOS  ID CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/ultimos/movimientos/64b973aaa66a4e7ca583e094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"ultimos",
+						"movimientos",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ULTIMOS 10 MOVIMIENTOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/ultimos/movimientos/64b973aaa66a4e7ca583e094",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"ultimos",
+						"movimientos",
+						"64b973aaa66a4e7ca583e094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/creditos/client/64b6f9329acb745ce0587323/tipo/TJC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/creditos/client/64b6f9329acb745ce0587323/tipo/TJC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"creditos",
+						"client",
+						"64b6f9329acb745ce0587323",
+						"tipo",
+						"TJC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/creditos/tarjetas/cargos/numerocredito/TJC86583/fechainicio/1/07/23,%2000:00/fechafin/31/07/23,%2000:00",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/creditos/tarjetas/cargos/numerocredito/TJC86583/fechainicio/1/07/23,%2000:00/fechafin/31/07/23,%2000:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"creditos",
+						"tarjetas",
+						"cargos",
+						"numerocredito",
+						"TJC86583",
+						"fechainicio",
+						"1",
+						"07",
+						"23,%2000:00",
+						"fechafin",
+						"31",
+						"07",
+						"23,%2000:00"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

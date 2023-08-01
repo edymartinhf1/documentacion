@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "461bb23a-885e-4c9a-9721-bf4c7d642fef",
+		"name": "coleccion-api-cuentas-bancarias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "monedero",
+			"item": [
+				{
+					"name": "CREACION MONEDERO EMISOR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\":\"EVELYN ORTIZ\",\r\n  \"numeroDocumento\":\"900123452\",\r\n  \"tipoDocumento\":\"DNI\",\r\n  \"numeroCelular\":\"900879548\",\r\n  \"correo\":\"dato23@com.com\",\r\n  \"imeiCelular\":\"457878898977\",\r\n  \"tipoMonedero\":\"P2P\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/cuentas/monedero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"cuentas",
+								"monedero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TRANSFERENCIA MONEDERO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n    \r\n    \"numeroCelularEmisor\":\"987564561\",\r\n    \"numeroCelularReceptor\":\"987564567\",\r\n    \"numeroMonederoEmisor\":\"987-5656555\",\r\n    \"numeroMonederoReceptor\":\"754-5665565\",\r\n    \"tipoTransferencia\":\"MONM\",\r\n    \"importeTransferido\":400\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/operaciones/cuentas/transfer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"operaciones",
+								"cuentas",
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREACION MONEDERO RECEP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\":\"CRISTINA BLANCO\",\r\n  \"numeroDocumento\":\"98745645\",\r\n   \"tipoDocumento\":\"DNI\",\r\n  \"numeroCelular\":\"900546600\",\r\n  \"correo\":\"dato23@com.com\",\r\n  \"imeiCelular\":\"457878898978\",\r\n  \"tipoMonedero\":\"NOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/cuentas/monedero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"cuentas",
+								"monedero"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tarjeta debito",
+			"item": [
+				{
+					"name": "POST TARJETA DEBITO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCliente\": \"64be06afa66a4e7ca583e095\",\r\n    \"numeroCuentaPrincipal\": \"AHO57480\",\r\n    \"numeroCuenta\": \"AHO57480\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/tarjeta/debito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tarjeta",
+								"debito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TARJETA DEBITO POR ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"idCliente\":\"64a8361c4723df7e0f489e1a\",\r\n    \"numeroCuentaPrincipal\":\"CTE22851\",\r\n    \"numeroCuenta\":\"CTE22851\"\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/tarjeta/debito/64b973aaa66a4e7ca583e094",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tarjeta",
+								"debito",
+								"64b973aaa66a4e7ca583e094"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET CUENTAS POR TARJETA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/tarjeta/debito/cuentas/TAR-DEB-43409",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tarjeta",
+								"debito",
+								"cuentas",
+								"TAR-DEB-43409"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST ASOCIATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCliente\": \"64b973aaa66a4e7ca583e094\",\r\n    \"numeroCuenta\": \"CTE12179\",\r\n    \"numeroTarjetaDebito\":\"TAR-DEB-22042\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/tarjeta/debito/asociacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"tarjeta",
+								"debito",
+								"asociacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "monedero p2p",
+			"item": [
+				{
+					"name": "CREACION MONEDERO P2P",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\":\"MARIA PILAE\",\r\n  \"numeroDocumento\":\"10325585\",\r\n  \"tipoDocumento\":\"DNI\",\r\n  \"numeroCelular\":\"900100305\",\r\n  \"correo\":\"dato23@com.com\",\r\n  \"imeiCelular\":\"457878898977\",\r\n  \"tipoMonedero\":\"P2P\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/cuentas/monedero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"cuentas",
+								"monedero"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder",
+			"item": []
+		},
+		{
+			"name": "POST CUENTA BANCARIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"idCliente\":\"64a5a565e997ce6c7f7141da\",\r\n    \"tipoCuenta\":\"AHO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CUENTAS FIND ID CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cuentas/cliente/64c54f4d6788d14f9a773ecf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cuentas",
+						"cliente",
+						"64c54f4d6788d14f9a773ecf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CUENTAS BANCARIAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CUENTAS BANCARIAS Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CUENTA ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

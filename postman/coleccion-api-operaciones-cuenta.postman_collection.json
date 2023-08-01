@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "bea924e8-03a3-461b-90d5-87190162657b",
+		"name": "coleccion-api-operaciones-cuenta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "OPERACIONES-CUENTA-ABONO/CARGO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": \"64b973aaa66a4e7ca583e094\",\r\n    \"tipoOperacion\": \"RET\",\r\n    \"numeroCuenta\": \"AHO57480\",\r\n    \"importe\":1000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET OPERACIONES CUENTAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET OPERACIONES CUENTA POR CLIENTE  ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/cliente/64a8361c4723df7e0f489e1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						"cliente",
+						"64a8361c4723df7e0f489e1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET OPERACIONES NUMERO CUENTA +TIPO",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "TRANSFERENCIA PROPIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"idClienteEmisor\":\"\",\r\n    \"idClienteReceptor\":\"\",\r\n    \"cuentaEmisora\":\"\",\r\n    \"cuentaReceptora\":\"\",\r\n    \"fechaOperacion\":\"\",\r\n    \"tipoTransferencia\":\"PROPI\",\r\n    \"importeTransferido\":400\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET OPERACIONES POR MES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET OPERACIONES POR FECHA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/numerocuenta/CTE26171/fechainicio/2023-07-01 00:00:00/fechafin/2023-07-31 23:59:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						"numerocuenta",
+						"CTE26171",
+						"fechainicio",
+						"2023-07-01 00:00:00",
+						"fechafin",
+						"2023-07-31 23:59:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OPERACIONES-CUENTA-ABONO/CARGO1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": \"64b973aaa66a4e7ca583e094\",\r\n    \"tipoOperacion\": \"RET\",\r\n    \"numeroTarjetaDebito\": \"TAR-DEB-22042\",\r\n    \"medioPago\":\"TARD\",\r\n    \"numeroCuenta\": \"AHO57480\",\r\n    \"importe\":1500.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/operaciones/cuentas/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"operaciones",
+						"cuentas",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "c8695903-0871-40e1-a975-b570dfdb5cc6",
+		"name": "coleccion-api-clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28359146"
+	},
+	"item": [
+		{
+			"name": "POST CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \r\n    \"tipoCli\":\"PER\",\r\n    \"tipoDocumento\":\"DNI\",\r\n    \"nroDocumento\":\"80445678\",\r\n    \"nombre\":\"ELVIRA RAMON\",\r\n    \"razonSocial\":\"CRISTINA RAMONS\",\r\n    \"numeroCelular\":\"987878778\",\r\n    \"limiteCredito\":18500.50\r\n }  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET ID CLIENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/clientes/64c70a30e10a540fcf4872d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clientes",
+						"64c70a30e10a540fcf4872d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
